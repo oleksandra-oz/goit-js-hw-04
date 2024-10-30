@@ -1,5 +1,8 @@
 // Задача 2. Розрахунок калорій
 function calcAverageCalories(days) {
+  if (days.length === 0) {
+        return 0; 
+    }
     let average = 0;
     for (const cal of days) {
         average += cal.calories;
